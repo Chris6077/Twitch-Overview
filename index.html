@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
+			<!-- Parts of the backend and the css from https://codepen.io/freeCodeCamp/pen/Myvqmo-->
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  			<title>TITLE</title>
+  			<title>Twitch Overview</title>
   			<link rel="stylesheet" href="./style.css"/>
   			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="icon" href="https://raw.githubusercontent.com/Chris6077/Portfolio/master/images/logo.png">
+  			<script src="./backend.js"></script>
+        	<link rel="icon" href="https://raw.githubusercontent.com/Chris6077/Portfolio/master/images/logo.png">
 			<style type="text/css">
 			</style>
 		</head>
 		<body>
+			<div class="head">
+			    <h1>Twitch Overview</h1>
+			    <div class="menu">
+			      <div class="rad active" id="all">
+			        <div class="circle"></div><p>All</p>
+			      </div>
+			      <div class="rad" id="st">
+			        <div class="circle"></div><p>Streaming</p>
+			      </div>
+			      <div class="rad" id="offline">
+			        <div class="circle"></div><p>Offline</p>
+			      </div>
+			    </div>
+			</div>
     		<div class="container">
+			  	<div id="streamers"></div>
   			</div>
   			<div id="footer">
                 <div class="col-md-8">
