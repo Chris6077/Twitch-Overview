@@ -113,6 +113,10 @@ h1 {
   margin-left: 17.5%;
   margin-top: -2.333%;
 }
+#streaming a{
+  text-decoration: none;
+  color: #DDDDDD;
+}
 #name {
   position: absolute;
   margin-top: -2.5%;
