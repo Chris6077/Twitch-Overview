@@ -13,7 +13,7 @@ function getChannelInfo(){
 			else game = data.stream.game;
 			$.getJSON(makeURL("channels", val), function(data){
 				var logo = data.logo != null ? data.logo : "https://raw.githubusercontent.com/Chris6077/Portfolio/master/images/logo.png", description = status === "stream" ? ": " + data.status : "";
-				html = "<div class='" + status + "'><div id='pic'><img src='" + logo + "' class='pic'></div><div id='name'><a href='" + data.url + "' target='_blank'>" + data.name + "</a></div><div id='streaming'>" + game + "<span class='hidden'>" + description + "</span></div></div>";
+				html = "<div class='" + status + "'><a href='" + data.url + "' target='_blank'><div id='pic'><img src='" + logo + "' class='pic'></a></div><div id='name'><a href='" + data.url + "' target='_blank'>" + data.name + "</a></div><div id='streaming'>" + game + "<a href='" + data.url + "' target='_blank'>" + description + "</a></div></div>";
 				status === "stream" ? $("#streamers").prepend(html) : $("#streamers").append(html);
 			});
 		});
