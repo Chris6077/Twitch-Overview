@@ -1,4 +1,4 @@
-var channels = ["freecodecamp", "ubisoft", "sodapoppin", "shroud", "imdb"];
+var channels = ["freecodecamp", "ubisoft", "sodapoppin", "shroud", "imdb", "monstercat", "relaxbeats", "skylias"];
 
 function makeURL(type, name){
 	return "https://wind-bow.gomix.me/twitch-api/" + type + "/" + name + "?callback=?";
