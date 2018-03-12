@@ -17,7 +17,6 @@ function getChannelInfo(){
 				status === "stream" ? $("#streamers").prepend(html) : $("#streamers").append(html);
 			});
 		});
-		first = "";
 	});
 };
 
